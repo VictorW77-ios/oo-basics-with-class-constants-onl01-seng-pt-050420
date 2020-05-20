@@ -9,6 +9,7 @@ class Shoe
     @brand = brand
     BRANDS << brand
     unique_brands = BRANDS.uniq(&:size)
+    unique_brands
   end
   
   def cobble
@@ -17,5 +18,3 @@ class Shoe
   end
   
 end
-
-unique_brands
