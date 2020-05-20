@@ -11,6 +11,8 @@ class Shoe
     unique_brands = BRANDS.uniq(&:size)
   end
 
+  unique_brands
+  
   def cobble
     self.condition = "new"
     puts "Your shoe is as good as new!"
