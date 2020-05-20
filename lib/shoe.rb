@@ -5,7 +5,7 @@ class Shoe
 
   BRANDS = []
   
-  BRANDS.size[BRANDS.uniq(&:size)]
+  BRANDS.uniq(&:size)
   
   def initialize(brand)
     @brand = brand
