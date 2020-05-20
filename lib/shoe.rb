@@ -10,8 +10,6 @@ class Shoe
     BRANDS << brand
     unique_brands = BRANDS.uniq(&:size)
   end
-
-  unique_brands
   
   def cobble
     self.condition = "new"
@@ -19,3 +17,5 @@ class Shoe
   end
   
 end
+
+unique_brands
