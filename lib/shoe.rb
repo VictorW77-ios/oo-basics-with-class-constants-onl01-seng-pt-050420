@@ -7,7 +7,8 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS << brand unless BRANDS.include?(brand)
+    BRANDS << brand 
+    BRANDS.uniq{|brand| brand.user_id}
   end
   
   def cobble
