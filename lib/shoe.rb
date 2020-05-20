@@ -5,11 +5,11 @@ class Shoe
 
   BRANDS = []
   
+  unique_brands = BRANDS.uniq(&:size)
+  
   def initialize(brand)
     @brand = brand
     BRANDS << brand
-    unique_brands = BRANDS.uniq(&:size)
-    unique_brands
   end
   
   def cobble
