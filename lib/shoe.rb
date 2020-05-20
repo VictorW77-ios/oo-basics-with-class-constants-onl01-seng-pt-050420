@@ -7,7 +7,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.uniq(&:size) unless BRANDS << brand
+    BRANDS << brand unless 
   end
   
   def cobble
